@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
                 list.scrollToPosition( index )
                 index ++
             } else {
-                Toast.makeText(applicationContext, "all fruits are complete!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(applicationContext, "All fruits are complete!", Toast.LENGTH_SHORT).show()
             }
         }
 
