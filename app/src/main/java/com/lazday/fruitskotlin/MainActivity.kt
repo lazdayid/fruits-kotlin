@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
             FruitsModel("cherry", R.drawable.cherry),
             FruitsModel("grape", R.drawable.grape),
             FruitsModel("orange", R.drawable.orange),
-            FruitsModel("paprica", R.drawable.paprica),
+            FruitsModel("paprika", R.drawable.paprika),
             FruitsModel("pineapple", R.drawable.pineapple),
             FruitsModel("strawberry", R.drawable.strawberry),
             FruitsModel("tomato", R.drawable.tomato),
@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         var index = 0
         val fab = findViewById<FloatingActionButton>(R.id.fab)
         fab.setOnClickListener {
-            if (index < 10) {
+            if (index < 11) {
                 fruitsAdapter.add( listFruit[ index ] )
                 list.scrollToPosition( index )
                 index ++
