@@ -28,15 +28,15 @@ class FruitActivity : AppCompatActivity(), FruitAdapter.OnAdapterListener {
         )
 
         val list = findViewById<RecyclerView>(R.id.list)
-        val fruitsAdapter = FruitAdapter(arrayListOf(), this)
-//        val fruitsAdapter = FruitsAdapter(listFruit)
-        list.adapter = fruitsAdapter
+//        val fruitAdapter = FruitAdapter(arrayListOf(), this)
+        val fruitAdapter = FruitAdapter(listFruit, this)
+        list.adapter = fruitAdapter
 
         var index = 0
         val fab = findViewById<FloatingActionButton>(R.id.fab)
         fab.setOnClickListener {
             if (index < 11) {
-                fruitsAdapter.add( listFruit[ index ] )
+                fruitAdapter.add( listFruit[ index ] )
                 list.scrollToPosition( index )
                 index ++
             } else {
